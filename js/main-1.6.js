@@ -34,7 +34,7 @@ $(function() {
 
 	// Do our DOM lookups beforehand
 	var nav_container = $(".header-container");
-	var nav = $("#nav");
+	var nav = $("#na7v");
 	
 	var top_spacing = 15;
 	var waypoint_offset = 50;
@@ -59,7 +59,7 @@ $(function() {
 	});
 	
 	var sections = $("section");
-	var navigation_links = $("#nav ul li a");
+	var navigation_links = $("#na7v ul li a");
 	
 	sections.waypoint({
 		handler: function(event, direction) {
@@ -68,7 +68,7 @@ $(function() {
 			active_section = $(this);
 			if (direction === "up") active_section = active_section.prev();
 
-			var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
+			var active_link = $('na7v a[href="#' + active_section.attr("id") + '"]');
 			navigation_links.removeClass("selected");
 			active_link.addClass("selected");
 
