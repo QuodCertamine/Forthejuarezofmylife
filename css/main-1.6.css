@@ -134,7 +134,20 @@ body {
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
 }
-
+.header-container-page {
+    position:absolute;
+    width: 100%;
+    background: black;
+    z-index: 10;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.9 opacity */
+    background: rgba(0, 0, 0, 0.8);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
+}
 .title {
     color: black;
 }
@@ -364,7 +377,12 @@ section h2 {
         width:100%;
         line-height:12px;
     }
-
+    .header-container-page {
+        position:absolute;
+        top:20px;
+        width:100%;
+        line-height:12px;
+    }
     .header-container.sticky {
         position: fixed;
         top: 15px;
@@ -509,13 +527,18 @@ section h2 {
     WIDE: Main
    ============ */
 
-    .main header {
+    .main header  {
         margin-top: 10%;
         margin-bottom: 30%;
         float: left;
         width: 100%;
     }
-
+    .main.subpage header  {
+        margin-top: 10%;
+        margin-bottom:0%;
+        float: left;
+        width: 100%;
+    }
     nav a {
         padding: 15px 2%;
         font-size: 90%;
@@ -588,7 +611,12 @@ section h2 {
         float: left;
         width: 100%;
     }
-
+    .main.subpage header {
+        margin-top: 4%;
+        margin-bottom:0%;
+        float: left;
+        width: 100%;
+    }
   
 }
 
