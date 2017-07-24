@@ -11,20 +11,20 @@
         <meta name="description" content="Welcome to the wedding website for Vannessa and Jorge's Big Day!">
 
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
+        <link href="css/bootstrap.css" rel="stylesheet">
         <!-- For iPhone 4 with high-resolution Retina display: -->
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
         <!-- For first-generation iPad: -->
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
         <link rel="shortcut icon" href="favicon.ico?v=1">
-
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main-1.6.css">
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- Use Bootstrap for the mobile friendly navbar -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
     </head>
     <body>
 
@@ -49,7 +49,34 @@
                     </nav>
                 </div>
             </div>
-
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">        
+<!--             <div id="logo">
+                <img src="apple-touch-icon.png"/>
+            </div> -->
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">THE BRIDE &amp; GROOM</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+            <li><a href="wedding.html">WEDDING PARTY</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="registry.html">REGISTRY</a></li>
+            <li><a href="https://www.facebook.com/vannessa.engmann/media_set?set=a.3987979618854.2146577.1261737963&type=3" target="_blank">PHOTOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
             <div class="main-container">
                 <div class="main wrapper clearfix subpage">
 
