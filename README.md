@@ -5,17 +5,17 @@ An HTML5 responsive design using jquery waypoints & scroll-to for a pleasant sin
 
 A live demo can be viewed at:
 
-   http://sarahlovesbradley.com
+   http://forthejuarezofmylife.com
 
 ========
 
-![Preview](https://github.com/bmgdev/responsive-wedding/blob/master/preview.png?raw=true)
+![Preview](https://github.com/QuodCertamine/Forthejuarezofmylife/blob/master/preview.png?raw=true)
 
 ## LICENSE
 
 (The MIT License)
 
-Copyright © Scal.io, LLC [Bradley Greenwood](http://github.com/bmgdev/)
+Copyright © QuodCertamine, LLC [Quod Certamine](http://github.com/QuodCertamine/)
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
