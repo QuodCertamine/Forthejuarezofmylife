@@ -25,6 +25,9 @@
         <!-- Use Bootstrap for the mobile friendly navbar -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="compiled/flipclock.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="compiled/flipclock.js"></script>   
     </head>
     <body>
 
@@ -32,6 +35,8 @@
         <div id="bg-image-registry">
             <img src="img/7.jpg" alt="bg" />
         </div>
+        <div class="your-clock"></div>
+        
 
         <div id="bg-container">
 
@@ -148,8 +153,12 @@
 
 
 
-                    <div style="height: 300px"></div>
-
+                    <div style="height: 200px"></div>
+                    <div id="footer">
+                        <div id="footer-container">
+                            <div class="clock" style="margin:2em;"> </div>
+                        </div>
+                    </div>
                 </div> <!-- #main -->
             </div> <!-- #main-container -->
         </div> <!-- #bg-container -->
@@ -166,6 +175,21 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+        </script>
+        <script type="text/javascript">
+            var clock;
+            $(document).ready(function() {
+                // Grab the current date
+                var currentDate = new Date();
+                // Set some date in the past. In this case, it's always been since Jan 1
+                var pastDate  = new Date(2017,10,26, 0, 1);
+                // Calculate the difference in seconds between the future and current date
+                var diff = pastDate.getTime() / 1000 -currentDate.getTime() / 1000 ;
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter'
+                });
+            });
         </script>
     </body>
 </html>

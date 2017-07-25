@@ -25,6 +25,9 @@
         <!-- Use Bootstrap for the mobile friendly navbar -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="compiled/flipclock.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="compiled/flipclock.js"></script>   
     </head>
     <body>
 
@@ -116,11 +119,18 @@
                                 5430 Wildcat Rd, <br />
                                 Aubrey, TX 76227 <br />
                                 <a href="tel:1-940-435-4034">(940) 435-4034</a> <br />
-                                <a href="http://hidden.thespringsevents.com/">Hotel Website</a><br /> 
+                                <a href="http://hidden.thespringsevents.com/">Venue Website</a><br /> 
                                 
                             </p>
                             <h2>Hotels</h2> 
                             <p>
+                                (Nearest to the Venue) <br />
+                                Fortunata Winery <br />
+                                2297 FM2931 <br />
+                                Aubrey, TX 76227 <br />
+                                <a href="tel:1-940-440-9463">(940)-440-9463</a> <br />
+                                $139 <br />
+                                - <br />
                                 SpringHill Suites by Marriot <br />
                                 1434 Centre Pl Dr <br />
                                 Denton, TX 76205 <br />
@@ -177,9 +187,15 @@
                             <div class="hr-b"></div>
                         </div>
             
-
                     </section>
+                    <div style="height: 200px"></div>
+                    <div id="footer">
+                        <div id="footer-container">
+                            <div class="clock" style="margin:2em;"> </div>
+                        </div>
+                    </div>
                 </div> <!-- #main -->
+
             </div> <!-- #main-container -->
         </div> <!-- #bg-container -->
 
@@ -195,6 +211,21 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+        </script>
+        <script type="text/javascript">
+            var clock;
+            $(document).ready(function() {
+                // Grab the current date
+                var currentDate = new Date();
+                // Set some date in the past. In this case, it's always been since Jan 1
+                var pastDate  = new Date(2017,10,26, 0, 1);
+                // Calculate the difference in seconds between the future and current date
+                var diff = pastDate.getTime() / 1000 -currentDate.getTime() / 1000 ;
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter'
+                });
+            });
         </script>
     </body>
 </html>

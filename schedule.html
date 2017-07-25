@@ -25,6 +25,9 @@
         <!-- Use Bootstrap for the mobile friendly navbar -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="compiled/flipclock.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="compiled/flipclock.js"></script>   
     </head>
     <body>
 
@@ -106,7 +109,6 @@
                                 Aubrey, Texas <br /><br />
                                 Sunday, November 26, 2017 <br />
                                 6:00 PM at the ___<br /><br />
-                                *Adult reception to follow <br /><br /><br />
 
 <!--                                 <img src="img/thesprings-large.png" class="theinn" alt="The Springs in Denton - The Lodge" /> -->
                             </p>
@@ -117,14 +119,10 @@
                         <div class="column right">
                             <h2>SCHEDULE OF EVENTS</h2>
                             <p>
-                                Rehearsal Dinner <br />
-                                Thursday, November 25th at 8pm<br /><br />
-                                African Wedding <br />
-                                Friday, September 26th at 9am<br /><br />
+                                Rehearsal Dinner & African Wedding<br />
+                                Friday, September 24th at 9am<br /><br />
                                 Ceremony <br />
                                 Sunday, September 26th at 6pm (reception to follow)<br /><br />
-                                Breakfast &amp; Bocce <br />
-                                Monday, September 27th at 10am<br />
                             </p>
                         </div><!--end column--> 
 
@@ -136,6 +134,12 @@
                         </div>
 
                     </section>
+                    <div style="height: 200px"></div>
+                    <div id="footer">
+                        <div id="footer-container">
+                            <div class="clock" style="margin:2em;"> </div>
+                        </div>
+                    </div>
                 </div> <!-- #main -->
             </div> <!-- #main-container -->
         </div> <!-- #bg-container -->
@@ -152,6 +156,21 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+        </script>
+        <script type="text/javascript">
+            var clock;
+            $(document).ready(function() {
+                // Grab the current date
+                var currentDate = new Date();
+                // Set some date in the past. In this case, it's always been since Jan 1
+                var pastDate  = new Date(2017,10,26, 0, 1);
+                // Calculate the difference in seconds between the future and current date
+                var diff = pastDate.getTime() / 1000 -currentDate.getTime() / 1000 ;
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter'
+                });
+            });
         </script>
     </body>
 </html>
