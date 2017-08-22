@@ -23,17 +23,19 @@
         <link rel="stylesheet" href="css/main-1.6.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <!-- Use Bootstrap for the mobile friendly navbar -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <link rel="stylesheet" href="compiled/flipclock.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="compiled/flipclock.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <!-- <script src="js/bootstrap.js"></script> -->
+        <!-- <link rel="stylesheet" href="compiled/flipclock.css">
+        <script src="compiled/flipclock.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="src/jquery.fb.albumbrowser.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="src/jquery.fb.albumbrowser.js"></script>
     </head>
     <body>
 
 
         <div id="bg-image-registry">
-            <img src="img/1.jpg" alt="bg" />
+            <img src="img/10.jpg" alt="bg" />
         </div>
 
         <div id="bg-container">
@@ -47,7 +49,7 @@
                             <li><a href="wedding.html">WEDDING PARTY</a></li>
                             <li><a href="schedule.html">SCHEDULE</a></li>
                             <li><a href="registry.html">REGISTRY</a></li>
-                            <li><a href="photos.html" target="_blank">PHOTOS</a></li>
+                            <li><a href="photos.html">PHOTOS</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -64,8 +66,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-<!--            <div id="logo">
-                <p>Menu</p>
+<!--             <div id="logo">
+                <img src="apple-touch-icon.png"/>
             </div> -->
           </a>
         </div>
@@ -81,7 +83,6 @@
         </div>
       </div>
     </nav>
-
             <div class="main-container">
                 <div class="main wrapper clearfix subpage">
 
@@ -99,110 +100,34 @@
 
                     <div class="clearfix"></div>
 
-                    <section id="accomodations" class="clearfix">
-                        <div class="column full">
-                            <h1>Rsvp</h1>
-                            </br>
-                            <p>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDqqZ-YGeq3cxdHfOhuu1ZcoPPdk3GTV_ApBorjQHPsEoEhQ/viewform?usp=sf_link" target="_blank">Click here to get to our RSVP page.</a>
+                    <section id="registry" class="clearfix">
 
-                            </p>
-                            </br>
-                        </div><!--end column-->
-                        <h1>Accomodations</h1>
+                        <h1>Photos</h1>
 
-                        <div class="column left">
+                        <div class="fb-album-container"></div>
 
-                            <h2>Venue</h2>
-                            <p>
-                                <br />
-                                The Springs In Denton - The Lodge <br />
-                                5430 Wildcat Rd, <br />
-                                Aubrey, TX 76227 <br />
-                                <a href="tel:1-940-435-4034">(940) 435-4034</a> <br />
-                                <a href="http://hidden.thespringsevents.com/">Venue Website</a><br />
-
-                            </p>
-                            <h2>Hotels</h2>
-                            <p>
-                                (Nearest to the Venue) <br />
-                                Fortunata Winery <br />
-                                2297 FM2931 <br />
-                                Aubrey, TX 76227 <br />
-                                <a href="tel:1-940-440-9463">(940)-440-9463</a> <br />
-                                $139 <br />
-                                - <br />
-                                SpringHill Suites by Marriot <br />
-                                1434 Centre Pl Dr <br />
-                                Denton, TX 76205 <br />
-                                <a href="tel:1-940-383-4100">(940)-383-4100</a> <br />
-                                $90 <br />
-                                - <br />
-                                La Quinta Inn and Suites Denton<br />
-                                4465 I-35<br />
-                                Denton, TX 76207<br />
-                                <a href="tel:1-940-808-0444">(940) 808-0444</a> <br />
-                                $109 <br />
-                            </p>
-                        </div><!--end column-->
-
-                        <div class="column right">
-                            <h2>DIRECTIONS</h2>
-                            <p>
-                                Coming from Dallas <br /><br />
-
-                                Go northbound on I-35E. Turn right onto Loop 288N. Then take the FM 428 exit toward Aubrey. Turn right on to FM 428/E. Sherman Dr. Follow the 6.5 miles and turn right on to  Wildcat Rd. Finally follow Wildcat Rd. for 1.7 miles and <b>THE SPRINGS</b> will be on the left.
-                                <br /><br />
-
-                                Coming from Oaklahoma City<br /><br />
-
-                                Go South on I-35. Take exit 478 and turn left onto FM 455. Follow for 6.3 miles and then turn right onto Running Bear Rd. Turn left onto FM 2153. Follow FM 2153 for 4 miles and then turn left onto FM 428E. Follow for 2 miles and turn right onto Wildcat Rd. Follow for 1.7 miles and <b>The Springs</b> will be on the left.
-                                <br />
-                            </p>
-
-                        </div><!--end column-->
-
-                        <div class="clearfix"></div>
-
-                        <div class="column full">
-                            <div class="hr-t"></div>
-                            <div class="hr-b"></div>
-                        </div>
-
-                        <div class="column full">
-
-                            <h2>VICINITY MAP</h2>
-
-                            <div id="gmap">
-<!--                                 <iframe src="https://maps.google.com/maps/ms?msid=205751736116737027595.0004d416d6aa1647722db&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=32.91418,-116.982422&amp;spn=0.806997,1.167297&amp;z=9&amp;output=embed"></iframe> -->
-                                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tLibPqIz9FmHQvMiDglJPR7qfrM"></iframe>
-                                <br />
-                                <small><a href="https://www.google.com/maps/d/u/0/viewer?mid=1tLibPqIz9FmHQvMiDglJPR7qfrM&ll=33.095074735869126%2C-96.999054&z=11" target="_blank">View larger map</a></small>
-                            </div>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <div class="column full">
-                            <div class="hr-t"></div>
-                            <div class="hr-b"></div>
-                        </div>
+                        <!-- <script type="text/javascript">
+                            $(document).ready(function () {
+                                $(".fb-album-container").FacebookAlbumBrowser({
+                                    account: "natgeo"
+                                });
+                            });
+                        </script> -->
 
                     </section>
                     <div style="height: 200px"></div>
-                    <div id="footer">
+                    <!-- <div id="footer">
                         <div id="footer-container">
                             <div class="clock" style="margin:2em;"> </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div> <!-- #main -->
-
             </div> <!-- #main-container -->
         </div> <!-- #bg-container -->
 
 <!--         <script src="js/main-1.6.js"></script> -->
 
-        <script>
+        <!-- <script>
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-XXXXXXX-XX']);
           _gaq.push(['_trackPageview']);
@@ -226,6 +151,44 @@
                 clock = $('.clock').FlipClock(diff, {
                     clockFace: 'DailyCounter'
                 });
+            });
+        </script> -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $(".fb-album-container").FacebookAlbumBrowser({
+                    account: "natgeo",
+                    accessToken: "775908159169504|cYEIsh0rs25OQQC8Ex2hXyCOut4",
+                    onlyAlbum: "10150310813623951",
+                    showComments: true,
+                    commentsLimit:3,
+                    showAccountInfo: true,
+                    showImageCount: true,
+                    showImageText: true,
+                    shareButton: false,
+                    albumsPageSize: 0,
+                    photosPageSize: 0,
+                    lightbox: true,
+                    photosCheckbox: true,
+    				        pluginImagesPath: "src/",
+                    likeButton: true,
+                    shareButton: true,
+                    addThis:"ra-52638e915dd79612",
+                    photoChecked: function(photo){
+                        console.log("PHOTO CHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                        console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                    },
+                    photoUnchecked: function (photo) {
+                        console.log("PHOTO UNCHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                        console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                    },
+                    albumSelected: function (photo) {
+                        console.log("ALBUM CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                    },
+                    photoSelected: function (photo) {
+                        console.log("PHOTO CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                    }
+                });
+
             });
         </script>
     </body>
