@@ -30,7 +30,14 @@
         <script src="compiled/flipclock.js"></script>
     </head>
     <body>
-
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=169422246959047";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
         <div id="bg-image-registry">
             <img src="img/3.jpg" alt="bg" />
@@ -76,7 +83,7 @@
             <li><a href="wedding.html">WEDDING PARTY</a></li>
             <li><a href="schedule.html">SCHEDULE</a></li>
             <li><a href="registry.html">REGISTRY</a></li>
-            <li><a href="https://www.facebook.com/vannessa.engmann/media_set?set=a.3987979618854.2146577.1261737963&type=3" target="_blank">PHOTOS</a></li>
+            <li><a href="photos.html" target="_blank">PHOTOS</a></li>
           </ul>
         </div>
       </div>
@@ -109,7 +116,7 @@
                             <p><a href="https://www.target.com/gift-registry/giftgiver?registryId=da4e313a848c410f9a4cedbcd091b963" target="_blank">Target Registry</a></p>
                             <p>
                             LOVE NOTES FOR Vannessa &amp; Jorge <br />
-                            Email us at ... <br />
+                            <div class="fb-comments" data-href="http://forthejuarezofmylife.com/registry.html" data-numposts="5"></div>
                             </p>
 
                         </div><!--end column-->
