@@ -21,7 +21,9 @@ textarea {
 	height:0;
 	overflow:hidden;
 }
-
+body.plugin {
+    background: white;
+}
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
 	top:0;
